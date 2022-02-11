@@ -11,7 +11,7 @@
 可能不少人的第一直觉会认为传输链路是开发者完全不可控的因素，网络路由跳点的数量、运营商铺设线路的质量决定了线路带宽的大小、速率的高低。然而事实并非如此，程序发出的请求能否与应用层、传输层协议提倡的方式相匹配，对传输的效率也会有极大影响。最容易体现这点的是那些前端网页的优化技巧，只要简单搜索一下，就能找到很多以优化链路传输为目的的前端设计原则，譬如经典的[雅虎 YSlow-23 条规则](https://developer.yahoo.com/performance/rules.html)中与传输相关的内容如下。
 
 1. Minimize HTTP Requests。<br/>减少请求数量：请求每次都需要建立通信链路进行数据传输，这些开销很昂贵，减少请求的数量可有效的提高访问性能，对于前端开发者，可能用来减少请求数量的手段包括：
-   - 雪碧图（[CSS Sprites](https://en.wikipedia.org/w/index.php?title=CSS_Sprites&redirect=no)）
+   - 雪碧图（[CSS Sprites](https://en.wikipedia.org/wiki/Sprite_(computer_graphics)#Sprites_by_CSS)）
    - CSS、JS 文件合并/内联（Concatenation / Inline）
    - 分段文档（[Multipart Document](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)）
    - 媒体（图片、音频）内联（[Data Base64 URI](https://en.wikipedia.org/wiki/Data_URI_scheme)）
